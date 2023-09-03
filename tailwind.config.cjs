@@ -2,7 +2,17 @@
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			animation: {
+				'infinite-scroll': 'infinite-scroll 1s linear infinite',
+			  },
+			  keyframes: {
+				'infinite-scroll': {
+				  from: { transform: 'translateX(0%)' },
+				  to: { transform: 'translateX(120%)' },
+				}
+			  },
+		},
 	},
 	plugins: [require("@tailwindcss/typography"),require("daisyui")],
 	daisyui: {

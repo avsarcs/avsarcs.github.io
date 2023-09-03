@@ -4,7 +4,7 @@ import { Image } from "@astrojs/image/components";
 ---
 
 <div
-  class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
+  class="horizontal-card transition ease-in-out relative overflow-hidden"
 >
   <a href={url} target={target}>
     <div class="hero-content flex-col md:flex-row">
@@ -16,14 +16,24 @@ import { Image } from "@astrojs/image/components";
             width={750}
             format="webp"
             alt={title}
-            class="max-w-full md:max-w-[13rem] rounded-lg"
+            class="card-image max-w-full md:max-w-[13rem] rounded-lg"
           />
         )
       }
-      <div class="grow w-full">
-        <h1 class="text-xl font-bold">
+      <div class="grow w-full relative">
+        <h1 class="text-xl font-bold relative">
           {title}
-          {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
+          {
+            badge && (
+              <div class="badge-container">
+                <div class="badge bg-[#fcdfff] badge1">{badge}</div>
+                <div class="badge bg-[#fcdfff] badge2">{badge}</div>
+                <div class="badge bg-[#fcdfff] badge3">{badge}</div>
+                <div class="badge bg-[#fcdfff] badge4">{badge}</div>
+                <div class="badge bg-[#fcdfff] badge5">{badge}</div>
+              </div>
+            )
+          }
         </h1>
         <p class="py-1 text-1xl">{desc}</p>
         <div class="card-actions justify-end">
@@ -36,3 +46,77 @@ import { Image } from "@astrojs/image/components";
     </div>
   </a>
 </div>
+
+<style>
+
+  .horizontal-card {
+    background-color: #d9e3e3;
+
+    border-radius: 0px;
+    border-color: #87ceeb;
+    /* color: #d7f2ee; */
+    border-style: solid;
+    border-width: 5px;
+
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    transition: all 1s ease-in-out;
+  }
+
+  .horizontal-card:hover {
+    transform: translate(-5px, -5px);
+  }
+
+  .card-image {
+    transition: all 200ms ease-out;
+  }
+  .card-image:hover {
+    transform: scale(105%);
+  }
+  .badge-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    max-width: 15rem;
+    width: 7rem;
+    min-height: 1.63rem;
+    white-space: nowrap;
+  }
+
+  @keyframes scroll-animation {
+    from {
+      transform: translateX(-150%);
+    }
+    to {
+      transform: translateX(500%);
+    }
+  }
+
+  .badge {
+    animation: scroll-animation 10s linear infinite;
+    position: absolute;
+    min-height: 2rem;
+    padding-bottom: 0.5rem;
+    left: -143%;
+    box-shadow: 2px 2px 0px 0px rgb(255, 255, 255);
+  }
+
+  .badge:hover {
+    transform: scale(500%);
+  }
+
+  .badge2 {
+    animation-delay: 2500ms;
+  }
+
+  .badge3 {
+    animation-delay: 5000ms;
+  }
+
+  .badge4 {
+    animation-delay: 7500ms;
+  }
+
+  .badge5 {
+    animation-delay: 10s;
+  }
+</style>
