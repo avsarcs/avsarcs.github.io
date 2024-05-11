@@ -23,8 +23,22 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1></h1>
-      <a
+
+      <p>
+        न चैष धर्मो वनए एव सिद्धः पुरेऽपि सिद्धिर्नियता यतीनां <br/>
+        बुद्धिश्च यत्नश्च निमित्तं अत्र वनं च लिङ्गं च हि भीरुचिह्नं
+      </p>
+      
+      <p>
+        Attainment is not only achieved in forests,
+        the salvation of ascetics can be accomplished
+        even in a city; thought and effort are the true means.
+        The forest and the badge are only coward’s signs.
+      </p>
+      <br/>
+      <p>
+        Visit <a href='/about'><u>about</u></a> page for who I am / projects. RSS:
+        <a
         target="_blank"
         href="/rss.xml"
         class="rss-link"
@@ -40,30 +54,12 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         </svg>
         <span class="sr-only">RSS Feed</span>
       </a>
-
-      <p>
-        न चैष धर्मो वनए एव सिद्धः पुरेऽपि सिद्धिर्नियता यतीनां
-        बुद्धिश्च यत्नश्च निमित्तं अत्र वनं च लिङ्गं च हि भीरुचिह्नं
-
-        Attainment is not only achieved in forests,
-        the salvation of ascetics can be accomplished
-        even in a city; thought and effort are the true means.
-        The forest and the badge are only coward’s signs.
       </p>
-      <p>
-        Read the blog posts or check
-        <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
-      </p>
+
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
             <Socials />
           </div>
         )

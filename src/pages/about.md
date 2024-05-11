@@ -2,35 +2,24 @@
 layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
+Hi there.. 👋
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+I am a CS major + philosophy minor (sophomore) in Bilkent University, Ankara.
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+I'll try to write quality content but there are absolutely zero promises as I'll most probably, from time to time, end up shitposting. This website is not (solely) a gimmick / portfolio to rizz up prospective employers, but a personal den. I am hoping to funnel some like-minded people from X here to read and think with me, to make some connections with similar interests, maybe even collaborate.
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+I aspire to those in the software community who call themselves "makers"; those with high creative energy and an eye for aesthetics. Those who can get excited about a vision. Those who can craft projects in their mom's basements with the same spirit and vigor as Tombo from Kiki's Delivery Service, crafting an airplane in his backyard. 
 
 <div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
+  <img src="/assets/tombo_from_kiki.png" class="sm:w-1/2 mx-auto" alt="Tombo from Kiki">
 </div>
 
-## Tech Stack
+(I guess some people got a similar sense of excitement from playing with legos during their childhood. I never did play with legos that much, if you don't mean the video game version.)
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+In my opinion, no one comes to this world to moneymax or careermax or statusmax etc. etc. The only thing that matters is creative freedom, and the extent to which you are able to indulge in it. My projects are of course designed to increase future prospects, but this principle always runs as a background process.
 
-## Features
+Let this be my little puddle of freedom on the internet.
 
-Here are certain features of this site.
+About the content, my posts may be both technical or non-technical -I'll try to differentiate between them clearly using tags. So thank you [satnaing](https://github.com/satnaing) for building the Astro template that this website uses with all the banger features like tags. My technical posts are written usually to teach myself something while also writing about it. I aim to write technical posts both in philosophy and software development. I don't know what my non-technical posts will be like yet, probably each of them a uniquely bizarre rant.
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+See you soon.
