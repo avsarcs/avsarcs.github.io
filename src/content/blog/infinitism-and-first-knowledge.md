@@ -6,6 +6,7 @@ tags:
  - philosophy
 description: Klein fails to defend infinitism
 ---
+
 Klein views infinitism as the only proper account of knowledge based on his claim that rejecting infinitism would inevitably end up violating at least one of two epistemic principles; namely the Principle of Avoiding Circularity (PAC) and the Principle of Avoiding Arbitrariness (PAA). He stipulates PAC and PAA as “intuitively plausible constraints on good reasoning,” (Klein, 1999, pg. 298).
 The first of these principles, PAC, states that a belief cannot be involved in its own chain of justification. This is a simple requirement that circular reasoning is avoided. Consider the following reasoning:
 
